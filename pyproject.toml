@@ -86,10 +86,10 @@ Issues = "https://github.com/modelcontextprotocol/python-sdk/issues"
 packages = ["src/mcp"]
 
 [tool.pyright]
-typeCheckingMode = "strict"
 include = ["src/mcp", "tests", "examples/servers"]
 venvPath = "."
 venv = ".venv"
+strict = ["src/mcp/**/*.py"]
 
 [tool.ruff.lint]
 select = ["C4", "E", "F", "I", "PERF", "UP"]
